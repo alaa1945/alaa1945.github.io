@@ -144,12 +144,10 @@ span {
   height: 100%;
   width: 100%;
 }
-.text2{
-  padding: 20px 0;
-}
+
 .text2 h1 {
   font-weight: 400;
-  padding: 5px 0;
+  padding: 15px 0;
   width: 100%;
   margin-bottom: 10px;
   color: #000000;
