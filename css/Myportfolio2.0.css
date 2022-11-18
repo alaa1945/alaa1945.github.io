@@ -523,6 +523,9 @@ footer {
 .footer_list li a{
   color: #a8aaaa;
 }
+.email_form{
+text-align:center;
+}
 .input_field{
   padding:10px 30px;
   border-radius: 6px;
