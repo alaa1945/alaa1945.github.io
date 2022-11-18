@@ -69,12 +69,21 @@
         -webkit-animation-delay: .7*2;
         animation-delay: .7*2;
 }
+
+#progress-bootstrap {
+        -webkit-animation-name: progress-bootstrap;
+        animation-name: progress-bootstrap;
+        -webkit-animation-delay: .7;
+        animation-delay: .7;
+}
+
 #progress-javascript {
         -webkit-animation-name: progress-javascript;
         animation-name: progress-javascript;
         -webkit-animation-delay: .7;
         animation-delay: .7;
 }
+
 #progress-java {
         -webkit-animation-name: progress-java;
         animation-name: progress-java;
@@ -104,9 +113,15 @@
 .progressblue {
         background-color: #1199ff;
 }
-.progresspink{
+
+.progressyellow {
+        background-color: #cbff11;
+}
+
+.progresspink {
         background-color: #ff1493;
 }
+
 .progresspurple {
         background-color: #9b59b6;
 }
@@ -136,6 +151,16 @@
 
         100% {
                 width: 100%;
+        }
+}
+
+@-webkit-keyframes progress-bootstrap {
+        0% {
+                width: 0%;
+        }
+
+        100% {
+                width: 90%;
         }
 }
 
@@ -199,6 +224,16 @@
         }
 }
 
+@-moz-keyframes progress-bootstrap {
+        0% {
+                width: 0%;
+        }
+
+        100% {
+                width: 90%;
+        }
+}
+
 @-moz-keyframes progress-javascript {
         0% {
                 width: 0%;
@@ -259,7 +294,17 @@
         }
 }
 
-@keyframes progress-javascript{
+@keyframes progress-bootstrap {
+        0% {
+                width: 0%;
+        }
+
+        100% {
+                width: 90%;
+        }
+}
+
+@keyframes progress-javascript {
         0% {
                 width: 0%;
         }
