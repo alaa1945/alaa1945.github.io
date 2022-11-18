@@ -1,5 +1,6 @@
 /* For small screens(phone) */
 @media (max-width: 700px) {
+
         #navbar {
                 height: 170px;
                 position: inherit;
@@ -101,6 +102,11 @@
         .ref {
                 display: none;
         }
+        .footer_link{
+                flex-direction: column;
+               
+                align-items: center;
+        }
 
 }
 
@@ -118,20 +124,16 @@
                 height: auto;
                 width: fit-content;
                 background-color: transparent;
-                padding-left: 80px;
+                padding-left: 300px;
         }
 
         #header .nav-list ul li {
                 display: inline-block;
+                padding-left: 40px;
         }
 
         #header .nav-list ul li a {
-                font-family: "Montserrat", san-serif;
-                font-weight: 200;
-                font-size: 15px;
-                font-weight: 600;
-                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                padding: 10px;
+                font-size: 16px;
         }
 
         #header .nav-list ul a:after {
@@ -167,7 +169,8 @@
         .welcome_section_illastration {
                 background-color: #a795ff;
                 border-bottom-left-radius: 30%;
-                width: 50%;
+                width: 100%;
+                max-width: 700px;
                 height: 100vh;
                 display: flex;
                 align-items: center;
@@ -200,12 +203,8 @@
                 height: 250px;
         }
 
-        .aboutme_description p {
-                font-size: 17px;
-        }
-
         .aboutme_description h3 {
-                font-size: 21px;
+                font-size: 22px;
         }
 
         .btn.download {
@@ -250,11 +249,15 @@
 
         /* Footer styling */
         .footer_container {
-                display: grid;
-                grid-template-columns: auto auto;
-                align-items: center;
-                justify-content: space-evenly;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 50px;
                 width: 100%;
+        }
+
+        .email_form {
+                display: flex;
         }
 
         .contact {
@@ -302,27 +305,11 @@
 
         }
 
-        .input_field {
-                height: 40px;
-                margin-bottom: 20px;
-        }
 
         textarea {
                 width: 100%;
                 height: 160px;
                 margin-left: 16px;
-        }
-
-        .submit_btn {
-                padding: 5px 10px;
-                font-size: 18px;
-                border-radius: 20px;
-                margin-top: 0;
-                margin-bottom: 0;
-                text-align: right;
-                display: flex;
-                align-items: right;
-                justify-content: right;
         }
 
         .service-container {
@@ -331,35 +318,16 @@
 }
 
 @media (min-width: 400px) {
-        .text1 .text.first-text {
-                font-size: 18px;
-        }
-
-        .text1 .text.sec-text {
-                font-size: 18px;
-        }
 
         .text2 h1 {
-                font-size: 26px;
-                font-weight: 500;
+                font-size: 32px;
         }
 
         .text2 p {
-                font-size: 19px;
-                font-weight: 400;
-                line-height: 27px;
+                font-size: 18px;
+                font-weight: 300;
+                line-height: 1.8;
         }
-
-        .btn {
-                padding: 5px 10px;
-        }
-
-        .btn a {
-                font-style: normal;
-                font-weight: 100;
-                font-size: 16px;
-        }
-
 }
 
 @media (min-width:700px) {
